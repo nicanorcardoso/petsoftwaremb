@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pet Software</string>
+    <string name="action_settings">Opções</string>
+    <string name="menu_settings">Opções</string>    
+    <string name="hello_world">Hello world!</string>    
+    <string name="senha">Senha:</string>
+    <string name="usuario">Usuário:</string>
+    
+
+    <!-- ACTIVITY SHOW -->
+    <string name="show_label_nome">Nome:</string>
+    <string name="show_label_estado_cidade">Estado/Cidade</string>
+    <string name="show_label_email">E-mail</string>
+    <string name="show_label_telefone">Telefone</string>
+    <string name="show_label_celular">Celular</string>
+    
+    <string name="login">Login</string> 
+    <string name="infoLogin">Preencha os dados de login para continuar</string>
+    <string name="lbMail">E-mail:</string>
+    <string name="lbCity">Cidade:</string>
+    <string name="lbCad">Cadastrar</string>
+    <string name="lbFone">Celular</string>
+    <string name="btn_deletar">Deletar</string>
+    <string name="btn_listar">Listar Clientes</string>
+    <string name="btn_Cadastrar">Cadastrar Clientes</string>
+    <string name="show_label_cidade">Cidade</string>        
+
+    <!-- CONFIGURAÇÕES  -->
+    <string name="lbIniciaNTF">Tempo em dias para incio do alerta antes da data de atendimento</string>
+    <string name="lbRepetirNTF">Tempo em Horas para repetir o lembrete</string>
+    
+    <!-- NOTIFICAÇÕES  -->
+    <string name="tituloNotificacao">Atendimento Pet-Shop</string>
+    <string name="avisoNotificacao">Atendimento Pet-Shop em x dias para:</string>
+    
+</resources>

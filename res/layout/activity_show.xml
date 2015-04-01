@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_label_nome" />
+
+        <TextView
+            style="@style/atributo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nicanor Davi Cardoso" />
+
+        <TextView
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_label_estado_cidade" />
+
+        <TextView
+            style="@style/atributo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MG/Paracatu" />
+
+        <TextView
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_label_email" />
+
+        <TextView
+            style="@style/atributo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nicanorcardoso@hotmail.com" />
+
+        <TextView
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_label_celular" />
+
+        <TextView
+            style="@style/atributo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="34 9271 7771" />
+
+        <TextView
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_label_telefone" />
+
+        <TextView
+            style="@style/atributo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="34 3813 0000" />
+    </LinearLayout>
+
+</ScrollView>
