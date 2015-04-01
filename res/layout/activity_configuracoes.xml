@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:text="@string/lbIniciaNTF" />
         <Spinner
-                android:id="@+id/comboboxIniciaNTF"
+                android:id="@+id/spinnerIniciaNTF"
                 style="@style/campo_texto"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
