@@ -37,14 +37,15 @@ public final class R {
         public static final int logo=0x7f020007;
     }
     public static final class id {
-        public static final int btnTesteNotificacao=0x7f080002;
+        public static final int btnTesteNotificacao=0x7f080003;
         public static final int comboboxEstados=0x7f080001;
-        public static final int senha=0x7f080007;
+        public static final int senha=0x7f080008;
         public static final int spinnerIniciaNTF=0x7f080000;
-        public static final int texto=0x7f080005;
-        public static final int titulo=0x7f080004;
-        public static final int txvDataSistema=0x7f080003;
-        public static final int usuario=0x7f080006;
+        public static final int teste=0x7f080002;
+        public static final int texto=0x7f080006;
+        public static final int titulo=0x7f080005;
+        public static final int txvDataSistema=0x7f080004;
+        public static final int usuario=0x7f080007;
     }
     public static final class layout {
         public static final int activity_configuracoes=0x7f030000;
