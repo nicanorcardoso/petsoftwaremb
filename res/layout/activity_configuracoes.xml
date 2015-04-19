@@ -9,18 +9,49 @@
         android:orientation="vertical"
         android:padding="10dp" >
 
-        <TextView
-            style="@style/label"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/lbIniciaNTF" />
+            android:layout_marginRight="300dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:orientation="horizontal" >
 
-        <Spinner
-            android:id="@+id/spinnerIniciaNTF"
-            style="@style/campo_texto"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2" />
-    </LinearLayout>
+            <TextView
+                style="@style/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbIniciaNTF" />
+
+            <Spinner
+                android:id="@+id/spinnerIniciaNTF"
+                style="@style/campo_texto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="300dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbRepetirNTF" />
+
+                <Spinner
+                    android:id="@+id/spinnerRepeteNTF"
+                    style="@style/campo_texto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            </LinearLayout>
+        </LinearLayout>
 
 </ScrollView>

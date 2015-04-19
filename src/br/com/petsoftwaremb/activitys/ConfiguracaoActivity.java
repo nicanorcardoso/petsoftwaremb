@@ -27,6 +27,11 @@ public class ConfiguracaoActivity extends Activity {
 		
 		mItens = new ArrayList<Configuracoes>();
 		
+		Configuracoes cfgDiaNull = new Configuracoes();
+		cfgDiaNull.setDiaIniciaNT("");
+		mItens.add(cfgDiaNull);
+
+		
 		Configuracoes cfgDia1 = new Configuracoes();
 		cfgDia1.setDiaIniciaNT("01");
 		mItens.add(cfgDia1);
@@ -35,9 +40,24 @@ public class ConfiguracaoActivity extends Activity {
 		cfgDia2.setDiaIniciaNT("02");
 		mItens.add(cfgDia2);
 		
+		Configuracoes cfgDia3 = new Configuracoes(); 
+		cfgDia3.setDiaIniciaNT("03");
+		mItens.add(cfgDia3);
+		
+		Configuracoes cfgDia4 = new Configuracoes();
+		cfgDia4.setDiaIniciaNT("04");
+		mItens.add(cfgDia4);
+	
+		Configuracoes cfgDia5 = new Configuracoes();
+		cfgDia5.setDiaIniciaNT("05");
+		mItens.add(cfgDia5);
+		
+		
 		mAdapter = new ArrayAdapter<Configuracoes>(this, R.layout.activity_spinner_item, mItens);
 		
 		mSpinnerDias = (Spinner) findViewById(R.id.spinnerIniciaNTF);
+		
+		mSpinnerDias.setAdapter(mAdapter);
 		
 	}
 	

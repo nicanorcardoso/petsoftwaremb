@@ -1,8 +1,17 @@
 package br.com.petsoftwaremb.activitys;
 
+import java.lang.reflect.Type;
 import java.util.Date;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
 import br.com.petsoftwaremb.activitys.R;
+import br.com.petsoftwaremb.entidades.Usuario;
+import br.com.petsoftwaremb.services.SincronismoRest;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,7 +31,43 @@ public class PrincipalActivity extends Activity {
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_principal);
-
+		/*
+		String idBuscaWs = "nicanor";
+		
+		SincronismoRest sincRest = new SincronismoRest();
+		
+		String chamadaWS;
+		String url = "http://10.50.0.6:8080/PetSinc/webresources/testews/Usuario/get/";
+		String parametro = "fernanda";
+		//casa
+		chamadaWS = url + parametro;
+		//success
+		//chamadaWS = "http://192.168.1.38:8080/PetSinc/webresources/testews/Usuario/get/nicanor";
+		
+		
+		String resultado = sincRest.chamadaGet(chamadaWS);
+		Log.i("JSON", resultado);
+		
+		//try {
+			//JSONObject json = new JSONObject(resultado);
+			
+			Gson gson = new Gson();
+			Usuario usr = new Usuario();
+			
+			Type usuarioType = new TypeToken<Usuario>() {}.getType();
+			usr = gson.fromJson(resultado, usuarioType);
+			
+			TextView texto = (TextView) findViewById(R.id.testews);
+			
+			texto.setText(usr.getEmail());
+			
+			
+		}/*catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+*/
 	}
 
 	public void onResume() {

@@ -27,11 +27,11 @@ import android.util.Log;
 public class NotificacaoAgendaTeste extends Service implements Runnable { 
 
 	public void onCreate() {
-		// um Service deve ser isolado em uma thread para que a activity não
-		// fique travada enquanto o serviço está em execução
+		// um Service deve ser isolado em uma thread para que a activity nï¿½o
+		// fique travada enquanto o serviï¿½o estï¿½ em execuï¿½ï¿½o
 		new Thread(NotificacaoAgendaTeste.this).start();
 
-		// qando o start é chamado ele automaticamente irá procurar o método run
+		// qando o start ï¿½ chamado ele automaticamente irï¿½ procurar o mï¿½todo run
 
 	}
 
@@ -46,7 +46,7 @@ public class NotificacaoAgendaTeste extends Service implements Runnable {
 
 		int totalDB = 0;
 		int totalReplicado = 0;
-		String tipoAtendimento = "Vacina Pavavirose";
+		String tipoAtendimento = "Motivo Retorno";
 		 
 		 NotificationManager notificationManager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
 		 
@@ -54,23 +54,23 @@ public class NotificacaoAgendaTeste extends Service implements Runnable {
 		
 		 
 		 if(totalDB == totalReplicado){
-			 nt = new Notification(R.drawable.ic_launcher, "Status Replicação", System.currentTimeMillis());
+			 nt = new Notification(R.drawable.ic_launcher, "Status Replicaï¿½ï¿½o", System.currentTimeMillis());
 		 
 			 nt.flags |= Notification.FLAG_AUTO_CANCEL;
 			 
 			 PendingIntent p = PendingIntent.getActivity(this, 0, new Intent(this.getApplicationContext(), PrincipalActivity.class), 0);
 			 
-			 nt.setLatestEventInfo(this, "Atendimento Pet-Shop", "Atendimento Pet-Shop em x dias para: " + tipoAtendimento, p);
+			 nt.setLatestEventInfo(this, "Atendimento Pet-Shop", "Retornar ao Pet-Shop em x dias para: " + tipoAtendimento, p);
 			 
 			 
 		 } else {
-			 nt = new Notification(R.drawable.ic_launcher, "Status Replicação", System.currentTimeMillis());
+			 nt = new Notification(R.drawable.ic_launcher, "Status Replicaï¿½ï¿½o", System.currentTimeMillis());
 			 
 			 nt.flags |= Notification.FLAG_AUTO_CANCEL;
 			 
 			 PendingIntent p = PendingIntent.getActivity(this, 0, new Intent(this.getApplicationContext(), PrincipalActivity.class), 0);
 			 
-			 nt.setLatestEventInfo(this, "Atendimento Pet-Shop", "Não foi possível conectar ao servidor para obter dados do próximo atendimento", p);
+			 nt.setLatestEventInfo(this, "Atendimento Pet-Shop", "Nï¿½o foi possï¿½vel conectar ao servidor para obter dados do prï¿½ximo atendimento", p);
 		 }
 		 
 		nt.vibrate = new long[]{100, 2000, 1000, 2000}; 
