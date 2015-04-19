@@ -2,12 +2,12 @@
 
     <item
         android:id="@+action_activity_principal/btnAddContato"
-        android:icon="@drawable/ic_action_add_person"
+        android:icon="@drawable/ic_action_new_event"
         android:showAsAction="always|withText"
         android:title="Realizar Agendamento"/>
     <item
         android:id="@+action_activity_principal/btnPesquisaContato"
-        android:icon="@drawable/ic_action_search"
+        android:icon="@drawable/ic_action_event"
         android:showAsAction="always|withText"
         android:title="Ver Agenda"/>
     <item

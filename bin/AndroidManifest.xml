@@ -8,20 +8,20 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
 
-    <!--==========================PERMISSÕES==========================-->
-    
+    <!-- ==========================PERMISSÕES========================== -->
+
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        
-        <!--==========================ACTIVITYS==========================-->
-        
+
+        <!-- ==========================ACTIVITYS========================== -->
+
         <activity
             android:name="br.com.petsoftwaremb.activitys.PrincipalActivity"
             android:label="@string/app_name" >
@@ -30,7 +30,10 @@
         </activity>
         <activity android:name="br.com.petsoftwaremb.activitys.FormActivity" >
         </activity>
-        <activity android:name="br.com.petsoftwaremb.activitys.ConfiguracaoActivity">            
+        <activity
+            android:name="br.com.petsoftwaremb.activitys.ConfiguracaoActivity"
+            android:label="@string/lbConfiguracoes" 
+            android:icon="@drawable/ic_action_settings">
         </activity>
         <activity android:name="br.com.petsoftwaremb.activitys.LoginActivity" >
             <intent-filter>
@@ -40,15 +43,15 @@
             </intent-filter>
         </activity>
 
-        <!--==========================SERVIÇOS==========================-->
-        
+        <!-- ==========================SERVIÇOS========================== -->
+
         <service android:name="br.com.petsoftwaremb.services.NotificacaoAgendaTeste" >
             <intent-filter>
                 <action android:name="NOTIFICACAO_AGENDA" />
-            <category android:name="android.intent.category.DEFAULT" />
-                </intent-filter>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </service>
-        
         <service android:name="br.com.petsoftwaremb.services.NotificacaoService" >
             <intent-filter>
                 <action android:name="NOTIFICACAO_AGENDA" >
