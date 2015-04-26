@@ -8,6 +8,9 @@
     <string name="senha">Senha:</string>
     <string name="usuario">Usuário:</string>
     
+    <!-- ANIMAL -->
+    <string name="show_label_raca">Raça:</string>
+    
 
     <!-- ACTIVITY SHOW -->
     <string name="show_label_nome">Nome:</string>

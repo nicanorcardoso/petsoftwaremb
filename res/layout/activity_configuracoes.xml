@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"    
     android:layout_width="match_parent"
+    android:background="#76abd8"
     android:layout_height="match_parent" >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="10dp" >
+        android:padding="5dp" >
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:padding="10dp"
+            android:layout_height="wrap_content"            
             android:orientation="horizontal" >
 
             <TextView
                 style="@style/atributo"
-                android:textColor="#696969"
-                android:layout_width="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/lbIniciaNTF" />
 
@@ -30,17 +29,20 @@
                 android:layout_height="wrap_content"                
                 android:layout_weight="1" />
             </LinearLayout>
-
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"                      
+                android:background="#4682b4"/>
+        
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:padding="10dp"
+                android:layout_height="wrap_content"                                                   
                 android:orientation="horizontal" >
 
                 <TextView
                     style="@style/atributo"
-                    android:textColor="#696969"
+                    android:textColor="#ffffff"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/lbRepetirNTF" />

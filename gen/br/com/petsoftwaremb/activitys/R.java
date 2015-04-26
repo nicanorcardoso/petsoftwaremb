@@ -10,8 +10,9 @@ package br.com.petsoftwaremb.activitys;
 public final class R {
     public static final class action_activity_principal {
         public static final int btnAddContato=0x7f090000;
-        public static final int btnConfiguracoes=0x7f090002;
+        public static final int btnConfiguracoes=0x7f090003;
         public static final int btnPesquisaContato=0x7f090001;
+        public static final int btnVacina=0x7f090002;
     }
     public static final class attr {
     }
@@ -33,23 +34,35 @@ public final class R {
         public static final int ic_action_event=0x7f020003;
         public static final int ic_action_help=0x7f020004;
         public static final int ic_action_new_event=0x7f020005;
-        public static final int ic_action_search=0x7f020006;
-        public static final int ic_action_settings=0x7f020007;
-        public static final int ic_launcher=0x7f020008;
-        public static final int logo=0x7f020009;
+        public static final int ic_action_next_item=0x7f020006;
+        public static final int ic_action_search=0x7f020007;
+        public static final int ic_action_settings=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int logo=0x7f02000a;
     }
     public static final class id {
         public static final int btnTesteNotificacao=0x7f080004;
+        public static final int calendarView1=0x7f080006;
         public static final int comboboxEstados=0x7f080002;
-        public static final int senha=0x7f08000a;
+        public static final int ltwAnimal=0x7f08000a;
+        public static final int ltwVacina=0x7f08000f;
+        public static final int senha=0x7f080015;
         public static final int spinnerIniciaNTF=0x7f080000;
         public static final int spinnerRepeteNTF=0x7f080001;
         public static final int teste=0x7f080003;
         public static final int testews=0x7f080005;
-        public static final int texto=0x7f080008;
-        public static final int titulo=0x7f080007;
-        public static final int txvDataSistema=0x7f080006;
-        public static final int usuario=0x7f080009;
+        public static final int texto=0x7f080009;
+        public static final int titulo=0x7f080008;
+        public static final int txvDataAplicacao=0x7f080013;
+        public static final int txvDataSistema=0x7f080007;
+        public static final int txvDose=0x7f080012;
+        public static final int txvID=0x7f08000c;
+        public static final int txvIdadeAplicacao=0x7f080011;
+        public static final int txvNome=0x7f08000e;
+        public static final int txvNomeAnimal=0x7f08000b;
+        public static final int txvNomeVacina=0x7f080010;
+        public static final int txvRaca=0x7f08000d;
+        public static final int usuario=0x7f080014;
     }
     public static final class layout {
         public static final int activity_configuracoes=0x7f030000;
@@ -57,8 +70,13 @@ public final class R {
         public static final int activity_principal=0x7f030002;
         public static final int activity_show=0x7f030003;
         public static final int activity_spinner_item=0x7f030004;
-        public static final int detalhe_notificacao=0x7f030005;
-        public static final int login=0x7f030006;
+        public static final int detalhe_animal=0x7f030005;
+        public static final int detalhe_notificacao=0x7f030006;
+        public static final int listar_animais=0x7f030007;
+        public static final int listar_animais_model=0x7f030008;
+        public static final int listar_cartao=0x7f030009;
+        public static final int listar_cartao_model=0x7f03000a;
+        public static final int login=0x7f03000b;
     }
     public static final class menu {
         public static final int principal=0x7f070000;
@@ -66,35 +84,38 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
-        public static final int avisoNotificacao=0x7f050019;
-        public static final int btn_Cadastrar=0x7f050013;
-        public static final int btn_deletar=0x7f050011;
-        public static final int btn_listar=0x7f050012;
+        public static final int avisoNotificacao=0x7f05001a;
+        public static final int btn_Cadastrar=0x7f050014;
+        public static final int btn_deletar=0x7f050012;
+        public static final int btn_listar=0x7f050013;
         public static final int hello_world=0x7f050003;
-        public static final int infoLogin=0x7f05000c;
-        public static final int lbCad=0x7f05000f;
-        public static final int lbCity=0x7f05000e;
+        public static final int infoLogin=0x7f05000d;
+        public static final int lbCad=0x7f050010;
+        public static final int lbCity=0x7f05000f;
         /**  CONFIGURAÇÕES  
          */
-        public static final int lbConfiguracoes=0x7f050015;
-        public static final int lbFone=0x7f050010;
-        public static final int lbIniciaNTF=0x7f050016;
-        public static final int lbMail=0x7f05000d;
-        public static final int lbRepetirNTF=0x7f050017;
-        public static final int login=0x7f05000b;
+        public static final int lbConfiguracoes=0x7f050016;
+        public static final int lbFone=0x7f050011;
+        public static final int lbIniciaNTF=0x7f050017;
+        public static final int lbMail=0x7f05000e;
+        public static final int lbRepetirNTF=0x7f050018;
+        public static final int login=0x7f05000c;
         public static final int menu_settings=0x7f050002;
         public static final int senha=0x7f050004;
-        public static final int show_label_celular=0x7f05000a;
-        public static final int show_label_cidade=0x7f050014;
-        public static final int show_label_email=0x7f050008;
-        public static final int show_label_estado_cidade=0x7f050007;
+        public static final int show_label_celular=0x7f05000b;
+        public static final int show_label_cidade=0x7f050015;
+        public static final int show_label_email=0x7f050009;
+        public static final int show_label_estado_cidade=0x7f050008;
         /**  ACTIVITY SHOW 
          */
-        public static final int show_label_nome=0x7f050006;
-        public static final int show_label_telefone=0x7f050009;
+        public static final int show_label_nome=0x7f050007;
+        /**  ANIMAL 
+         */
+        public static final int show_label_raca=0x7f050006;
+        public static final int show_label_telefone=0x7f05000a;
         /**  NOTIFICAÇÕES  
          */
-        public static final int tituloNotificacao=0x7f050018;
+        public static final int tituloNotificacao=0x7f050019;
         public static final int usuario=0x7f050005;
     }
     public static final class style {

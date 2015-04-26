@@ -1,20 +1,32 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
-        android:id="@+action_activity_principal/btnAddContato"
-        android:icon="@drawable/ic_action_new_event"
-        android:showAsAction="always|withText"
-        android:title="Realizar Agendamento"/>
-    <item
-        android:id="@+action_activity_principal/btnPesquisaContato"
         android:icon="@drawable/ic_action_event"
         android:showAsAction="always|withText"
-        android:title="Ver Agenda"/>
+        android:title="Agenda">
+        <menu>
+            <item
+                android:id="@+action_activity_principal/btnAddContato"
+                android:icon="@drawable/ic_action_new_event"
+                android:showAsAction="always|withText"
+                android:title="Realizar Agendamento"/>
+            <item
+                android:id="@+action_activity_principal/btnPesquisaContato"
+                android:icon="@drawable/ic_action_event"
+                android:showAsAction="always|withText"
+                android:title="Ver Agenda"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+action_activity_principal/btnVacina"
+        android:icon="@drawable/ic_action_search"
+        android:showAsAction="always|withText"
+        android:title="Cartão Vacina"/>
+        >
     <item
         android:id="@+action_activity_principal/btnConfiguracoes"
         android:icon="@drawable/ic_action_settings"
         android:showAsAction="always|withText"
         android:title="Configurações"/>
-        
-       
+
 </menu>
